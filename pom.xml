@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.jbw</groupId>
+    <artifactId>maodou</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>maodou</name>
+    <description>测试学习</description>
+<!--    描述项目构建的前提条件-->
+    <prerequisites>
+        <maven>4.0</maven>
+    </prerequisites>
+<!--    项目问题的管理系统-->
+    <issueManagement>
+        <!--问题管理系统（例如jira）的名字， -->
+        <system>jira</system>
+        <!--该项目使用的问题管理系统的URL -->
+        <url>http://jira.baidu.com/banseon</url>
+    </issueManagement>
+<!--项目创建年份，4位数字。当产生版权信息时需要使用这个值。 -->
+    <inceptionYear>2021年4月18日</inceptionYear>
+<!--项目开发者列表 -->
+    <developers>
+        <!--某个项目开发者的信息 -->
+        <developer>
+            <!--SCM里项目开发者的唯一标识符 -->
+            <id></id>
+            <!--项目开发者的全名 -->
+            <name>wangjibin</name>
+            <!--项目开发者的email -->
+            <email>w1812121918@163.com</email>
+            <!--项目开发者的主页的URL -->
+            <url></url>
+            <!--项目开发者在项目中扮演的角色，角色元素描述了各种角色 -->
+            <roles>
+                <role>Project Manager</role>
+                <role>Architect</role>
+            </roles>
+            <!--项目开发者所属组织 -->
+            <organization></organization>
+            <!--项目开发者所属组织的URL -->
+            <organizationUrl></organizationUrl>
+            <!--项目开发者属性，如即时消息如何处理等 -->
+            <properties>
+                <dept>No</dept>
+            </properties>
+            <!--项目开发者所在时区， -11到12范围内的整数。 -->
+            <timezone>-5</timezone>
+        </developer>
+    </developers>
+    <!--项目的其他贡献者列表 -->
+    <contributors>
+        <!--项目的其他贡献者。参见developers/developer元素 -->
+        <contributor>
+            <name/>
+            <email/>
+            <url/>
+        </contributor>
+    </contributors>
+    <!--该元素描述了项目所有License列表。 应该只列出该项目的license列表，不要列出依赖项目的 license列表。如果列出多个license，用户可以选择它们中的一个而不是接受所有license。 -->
+    <licenses>
+        <!--描述了项目的license，用于生成项目的web站点的license页面，其他一些报表和validation也会用到该元素。 -->
+        <license>
+            <!--license用于法律上的名称 -->
+            <name></name>
+            <!--官方的license正文页面的URL -->
+            <url></url>
+            <!--项目分发的主要方式： repo，可以从Maven库下载 manual， 用户必须手动下载和安装依赖 -->
+            <distribution></distribution>
+            <!--关于license的补充信息 -->
+            <comments></comments>
+        </license>
+    </licenses>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.31</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
