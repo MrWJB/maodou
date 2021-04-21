@@ -9,6 +9,18 @@ spring:
     port: 5672
     username: guest
     password: guest
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 1812121918@qq.com
+    password: 授权码
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+        debug: true
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
