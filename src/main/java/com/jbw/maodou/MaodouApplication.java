@@ -5,11 +5,13 @@ import org.springframework.batch.core.configuration.annotation.EnableBatchProces
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @MapperScan(value = "com.jbw.maodou.mapper")
 //@EnableScheduling
 @EnableBatchProcessing
+@EnableCaching
 public class MaodouApplication {
 
     public static void main(String[] args) {
