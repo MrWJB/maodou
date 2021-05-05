@@ -14,70 +14,70 @@
     <name>maodou</name>
     <description>测试学习</description>
 <!--    描述项目构建的前提条件-->
-    <prerequisites>
-        <maven>4.0</maven>
-    </prerequisites>
-<!--    项目问题的管理系统-->
-    <issueManagement>
-        <!--问题管理系统（例如jira）的名字， -->
-        <system>jira</system>
-        <!--该项目使用的问题管理系统的URL -->
-        <url>http://jira.baidu.com/banseon</url>
-    </issueManagement>
-<!--项目创建年份，4位数字。当产生版权信息时需要使用这个值。 -->
-    <inceptionYear>2021年4月18日</inceptionYear>
+<!--    <prerequisites>-->
+<!--        <maven>4.0</maven>-->
+<!--    </prerequisites>-->
+<!--&lt;!&ndash;    项目问题的管理系统&ndash;&gt;-->
+<!--    <issueManagement>-->
+<!--        &lt;!&ndash;问题管理系统（例如jira）的名字， &ndash;&gt;-->
+<!--        <system>jira</system>-->
+<!--        &lt;!&ndash;该项目使用的问题管理系统的URL &ndash;&gt;-->
+<!--        <url>http://jira.baidu.com/banseon</url>-->
+<!--    </issueManagement>-->
+<!--&lt;!&ndash;项目创建年份，4位数字。当产生版权信息时需要使用这个值。 &ndash;&gt;-->
+<!--    <inceptionYear>2021年4月18日</inceptionYear>-->
 <!--项目开发者列表 -->
-    <developers>
+<!--    <developers>-->
         <!--某个项目开发者的信息 -->
-        <developer>
-            <!--SCM里项目开发者的唯一标识符 -->
-            <id></id>
-            <!--项目开发者的全名 -->
-            <name>wangjibin</name>
-            <!--项目开发者的email -->
-            <email>w1812121918@163.com</email>
-            <!--项目开发者的主页的URL -->
-            <url></url>
-            <!--项目开发者在项目中扮演的角色，角色元素描述了各种角色 -->
-            <roles>
-                <role>Project Manager</role>
-                <role>Architect</role>
-            </roles>
-            <!--项目开发者所属组织 -->
-            <organization></organization>
-            <!--项目开发者所属组织的URL -->
-            <organizationUrl></organizationUrl>
-            <!--项目开发者属性，如即时消息如何处理等 -->
-            <properties>
-                <dept>No</dept>
-            </properties>
-            <!--项目开发者所在时区， -11到12范围内的整数。 -->
-            <timezone>-5</timezone>
-        </developer>
-    </developers>
+<!--        <developer>-->
+<!--            &lt;!&ndash;SCM里项目开发者的唯一标识符 &ndash;&gt;-->
+<!--            <id></id>-->
+<!--            &lt;!&ndash;项目开发者的全名 &ndash;&gt;-->
+<!--            <name>wangjibin</name>-->
+<!--            &lt;!&ndash;项目开发者的email &ndash;&gt;-->
+<!--            <email>w1812121918@163.com</email>-->
+<!--            &lt;!&ndash;项目开发者的主页的URL &ndash;&gt;-->
+<!--            <url></url>-->
+<!--            &lt;!&ndash;项目开发者在项目中扮演的角色，角色元素描述了各种角色 &ndash;&gt;-->
+<!--            <roles>-->
+<!--                <role>Project Manager</role>-->
+<!--                <role>Architect</role>-->
+<!--            </roles>-->
+<!--            &lt;!&ndash;项目开发者所属组织 &ndash;&gt;-->
+<!--            <organization></organization>-->
+<!--            &lt;!&ndash;项目开发者所属组织的URL &ndash;&gt;-->
+<!--            <organizationUrl></organizationUrl>-->
+<!--            &lt;!&ndash;项目开发者属性，如即时消息如何处理等 &ndash;&gt;-->
+<!--            <properties>-->
+<!--                <dept>No</dept>-->
+<!--            </properties>-->
+<!--            &lt;!&ndash;项目开发者所在时区， -11到12范围内的整数。 &ndash;&gt;-->
+<!--            <timezone>-5</timezone>-->
+<!--        </developer>-->
+<!--    </developers>-->
     <!--项目的其他贡献者列表 -->
-    <contributors>
-        <!--项目的其他贡献者。参见developers/developer元素 -->
-        <contributor>
-            <name/>
-            <email/>
-            <url/>
-        </contributor>
-    </contributors>
+<!--    <contributors>-->
+<!--        &lt;!&ndash;项目的其他贡献者。参见developers/developer元素 &ndash;&gt;-->
+<!--        <contributor>-->
+<!--            <name/>-->
+<!--            <email/>-->
+<!--            <url/>-->
+<!--        </contributor>-->
+<!--    </contributors>-->
     <!--该元素描述了项目所有License列表。 应该只列出该项目的license列表，不要列出依赖项目的 license列表。如果列出多个license，用户可以选择它们中的一个而不是接受所有license。 -->
-    <licenses>
-        <!--描述了项目的license，用于生成项目的web站点的license页面，其他一些报表和validation也会用到该元素。 -->
-        <license>
-            <!--license用于法律上的名称 -->
-            <name></name>
-            <!--官方的license正文页面的URL -->
-            <url></url>
-            <!--项目分发的主要方式： repo，可以从Maven库下载 manual， 用户必须手动下载和安装依赖 -->
-            <distribution></distribution>
-            <!--关于license的补充信息 -->
-            <comments></comments>
-        </license>
-    </licenses>
+<!--    <licenses>-->
+<!--        &lt;!&ndash;描述了项目的license，用于生成项目的web站点的license页面，其他一些报表和validation也会用到该元素。 &ndash;&gt;-->
+<!--        <license>-->
+<!--            &lt;!&ndash;license用于法律上的名称 &ndash;&gt;-->
+<!--            <name></name>-->
+<!--            &lt;!&ndash;官方的license正文页面的URL &ndash;&gt;-->
+<!--            <url></url>-->
+<!--            &lt;!&ndash;项目分发的主要方式： repo，可以从Maven库下载 manual， 用户必须手动下载和安装依赖 &ndash;&gt;-->
+<!--            <distribution></distribution>-->
+<!--            &lt;!&ndash;关于license的补充信息 &ndash;&gt;-->
+<!--            <comments></comments>-->
+<!--        </license>-->
+<!--    </licenses>-->
 
     <properties>
         <java.version>1.8</java.version>
@@ -87,23 +87,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -132,8 +115,59 @@
             <artifactId>spring-boot-starter-mail</artifactId>
             <version>2.4.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.chandre.quartz</groupId>
+            <artifactId>spring-boot-starter-quartz</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-batch</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.batch</groupId>
+            <artifactId>spring-batch-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.21</version>
+        </dependency>
 
+        <!--        websocket 依赖 开始-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>webjars-locator-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>sockjs-client</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>stomp-websocket</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+        <!--        websocket 依赖 end-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -141,6 +175,43 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+<!--        shiro 依赖-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.shiro</groupId>-->
+<!--            <artifactId>shiro-spring-boot-web-starter</artifactId>-->
+<!--            <version>1.4.0</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.theborakompanioni</groupId>-->
+<!--            <artifactId>thymeleaf-extras-shiro</artifactId>-->
+<!--            <version>2.0.0</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>2.3.3.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -152,6 +223,25 @@
 
 
     <build>
+        <resources>
+            <resource>
+                <!--  xml放在Java目录下             -->
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.yml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -163,6 +253,15 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
         </plugins>

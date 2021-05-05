@@ -1,6 +1,6 @@
 package com.jbw.maodou.controller;
 
-import com.jbw.maodou.config.RabbitTopicConfig;
+import com.jbw.maodou.config.mq.RabbitTopicConfig;
 import com.jbw.maodou.rabbitmq.product.MessageForSendService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

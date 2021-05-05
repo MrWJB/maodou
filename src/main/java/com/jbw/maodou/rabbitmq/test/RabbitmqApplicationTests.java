@@ -1,8 +1,8 @@
 package com.jbw.maodou.rabbitmq.test;
 
-import com.jbw.maodou.config.RabbitFanoutConfig;
-import com.jbw.maodou.config.RabbitHeaderConfig;
-import com.jbw.maodou.config.RabbitTopicConfig;
+import com.jbw.maodou.config.mq.RabbitFanoutConfig;
+import com.jbw.maodou.config.mq.RabbitHeaderConfig;
+import com.jbw.maodou.config.mq.RabbitTopicConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.amqp.core.Message;

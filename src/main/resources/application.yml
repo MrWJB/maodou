@@ -1,19 +1,31 @@
 spring:
   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/shoping?useUnicode=true&useSSL=false&characterEncoding=utf8
     username: root
     password: 1234qwer
+    #schema:
+    #  - classpath:/org.springframework/batch/core/schema-mysql.sql    # 项目启动时执行建表sql。
+  batch:
+    initialize-schema: always
+    job:
+      enabled: false   #不会自动执行，需要手动触发执行。
+# rabbitmq配置信息
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
+    listener:
+      direct:
+        retry:
+          enabled: false
   mail:
     host: smtp.qq.com
     port: 465
-    username: 1812121918@qq.com
-    password: 授权码
+    username: 1310548622@qq.com
+    password: jtgfjpedfxdtjehf
     default-encoding: UTF-8
     properties:
       mail:
@@ -21,6 +33,39 @@ spring:
           socketFactory:
             class: javax.net.ssl.SSLSocketFactory
         debug: true
+#  security:
+#    user:
+#      name: admin
+#      password: 123
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password: redis123
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms
+        min-idle: 0
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+# 配置shiro信息
+shiro:
+#  开启shiro配置，默认为true
+  enabled: true
+#  开启shiro web 配置，默认为true
+  web:
+    enabled: true
+#    登陆地址，默认为/login.jsp
+  loginUrl: /login
+#  表示成功地址，默认为"/login.jsp"
+  successUrl: /index
+#表示默认跳转地址
+  unauthorizedUrl: /unautorized
+#  是否通过URL参数实现会话跟踪，如果网站支持cookie，可以关闭此选项，默认为true。
+  sessionManager:
+    sessionIdUrlRewritingEnabled: true
+#    表示是否允许通过cookie实现会话跟踪，默认为true。
+    sessionIdCookieEnabled: true

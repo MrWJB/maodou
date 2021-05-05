@@ -1,4 +1,4 @@
-package com.jbw.maodou.config;
+package com.jbw.maodou.config.mq;
 
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;
