@@ -14,3 +14,12 @@
     </includes>
     <filtering>false</filtering>
 </resource>
+
+## 2021/05/09
+整合redis，单机缓存只需要开发者在application.properties中进行Redis配置即缓存配置即可。
+
+## redis集群的搭建
+搭建redis集群缓存主要分为三个步骤：
+1：搭建redis集群。
+2：配置缓存。
+3：使用缓存。

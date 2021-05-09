@@ -1,3 +1,17 @@
+<!--
+    这是一个常规的Ehcache配置文件，提供了两个缓存策略，一个是默认的，另一个名为book_cache。
+    其中，
+    name表示缓存名称；
+    maxElementsInMemory表示缓存最大个数；
+    eternal表示缓存对象是否永久有效，一旦设置了永久有效，timeout将不起做用。
+    timeToIdleSeconds表示缓存对象在失效前的允许闲置时间（单位：秒），当eternal=false
+    对象不是永久有效时，该属性才生效；
+    timeToLiveSeconds表示缓存对象在失效前的允许存活的时间（单位：秒），当eternal=false
+    对象不是永久有效时，该属性才生效；
+    overflowToDisk表示当内存中的对象数量达到maxElementsInMemory时，Ehcache是否将对象写到磁盘。
+    diskExpiryThreadIntervalSeconds表示磁盘失效线程运行时间间隔。
+
+-->
 <ehcache>
     <diskStore path="java.io.tmpdir/cache"/>
     <defaultCache

@@ -9,9 +9,9 @@ import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @MapperScan(value = "com.jbw.maodou.mapper")
-//@EnableScheduling
-@EnableBatchProcessing
-@EnableCaching
+//@EnableScheduling   //开启定时任务
+@EnableBatchProcessing  //开启批处理
+@EnableCaching  //开启缓存
 public class MaodouApplication {
 
     public static void main(String[] args) {

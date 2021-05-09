@@ -48,6 +48,11 @@ spring:
         max-idle: 8
         max-wait: -1ms
         min-idle: 0
+  #缓存配置
+  cache:
+    cache-names: c1,c2  #缓存名称，redis中的key都有一个前缀，默认前缀就是"缓存名：："
+    redis:
+      time-to-live: 1800s  #redis中key的过期时间。
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
